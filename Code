@@ -1,0 +1,26 @@
+#include<stdio.h>
+int main(){
+  int a,b,c,x;
+	float d;
+	printf("enter account number(-1 to end): ");
+	scanf("%d",&a);
+	
+	while(a != -1){
+		printf("Enter the mortgage amount(in dollars): ");
+		scanf("%d",&b);
+		
+		printf("enter mortgage terms(in years): ");
+		scanf("%d",&c);
+		
+		printf("enter interest rate(as a decimal): ");
+		scanf("%f",&d);
+		
+		x = ((b * c * d) + b) / (c * 12);
+		printf("the monthly payable interest $ %d\n", x);
+		
+		printf("enter account number(-1 to end): ");
+		scanf("%d",&a);
+		
+	}
+	return 0;	
+}
